@@ -1,0 +1,55 @@
+*{
+  align-items: center;
+  background-color: lightgray;
+}
+
+html, body, #root, .appClass{
+  height : 100%;
+}
+
+.appClass {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+  margin-top: 50px; /* Adds gap between the header and body */
+
+}
+
+header {
+  margin-bottom: 50px; /* Adds gap below the header */
+}
+
+
+.divFooter{
+  display: flex;
+  flex-direction: column;
+}
+
+.circular-image {
+  width: 200px; /* Adjust to your desired size */
+  height: 200px; /* Make the height equal to the width for a circle */
+  border-radius: 50%; /* This creates the circular shape */
+  object-fit: cover; /* Ensures the image fills the circle without distortion */
+  border: 2px solid #000; /* Optional: Add a border */
+}
+
+.whatever {
+  display: flex; /* Aligns all children (ul) in a row */
+  gap: 20px; /* Adds space between the ul elements */
+}
+
+.whatever ul {
+  list-style: none; /* Removes bullet points */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+}
+
+.whatever li {
+  display: inline; /* Ensures li items in each ul are displayed in a row */
+  margin-right: 10px; /* Adds spacing between li items */
+}
+
+
